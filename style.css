@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    color: white;
+    font-family: sans-serif;
+    font-size: 23px;
+    display: none;
+}
+
+.desktop {
+    width: 1200px;
+    height: 100px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tablet {
+    width: 992px;
+    height: 100px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone {
+    width: 576px;
+    height: 100px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista-produtos {
+    background-color: #eee;
+    width: 100%;
+    height: auto; 
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.produto {
+    width: 200px;
+    height: 250px;
+    margin: 40px 5px;
+    
+    box-shadow: 5px 5px 5px 0px rgb(145, 145, 145);
+    border-radius: 4px;
+    background-color: #fff;
+
+}
+
+/*  Medidas Referencia Bootstrap */
+.phone p {
+    display: none;
+}
+
+.tablet p {
+    display: none;
+}
+
+.desktop p {
+    display: inline;
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 992px) { 
+    .phone p {
+        display: none;
+    }
+    
+    .tablet p {
+        display: inline;
+    }
+    
+    .desktop p {
+        display: none;
+    }
+
+    
+}
+
+/* // Small devices (landscape phones, 576px) */
+@media (max-width: 576px) { 
+    .phone p {
+        display: inline;
+    }
+
+    .tablet p {
+        display: none;
+    }
+
+    .desktop p {
+        display: none;
+    }
+}
